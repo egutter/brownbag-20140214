@@ -13,4 +13,10 @@ describe 'tennis scorer' do
     board.point_for_player(1)
     expect(board.score).to eq [15,0]
   end
+
+  it "gives point to second player" do
+    board = TennisBoard.new
+    board.point_for_player(2)
+    expect(board.score).to eq [0,15]
+  end
 end

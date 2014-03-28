@@ -8,6 +8,10 @@ class TennisBoard
   end
 
   def point_for_player(player)
-    @score = [15,0]
+    if player == 1
+      @score = [15,0]
+    else
+      @score = [0, 15]
+    end
   end
 end
