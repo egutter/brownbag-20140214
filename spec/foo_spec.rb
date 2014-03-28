@@ -7,4 +7,10 @@ describe 'tennis scorer' do
     board = TennisBoard.new
     board.score.should == [0, 0]
   end
+
+  it "gives point to first player" do
+    board = TennisBoard.new
+    board.point_for_player(1)
+    expect(board.score).to eq [15,0]
+  end
 end
