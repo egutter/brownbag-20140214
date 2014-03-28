@@ -1,11 +1,5 @@
-require File.dirname(__FILE__) + "/../app/foo"
+require File.dirname(__FILE__) + "/../app/tennis_board"
 
-class TennisBoard
-
-  def score
-    [0,0]
-  end
-end
 
 describe 'tennis scorer' do
 
